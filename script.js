@@ -5,8 +5,8 @@ function cryptText(text) {
     let result = '';
      
         for (let i = 0; i < words.length; i++) {
-           if (words[i].length < 3) {
-               result += words[i] + ' ';
+           if (words[i].length < 3)  {
+               result += `${words[i]}ик` + ' ';
            } else if (vowels.includes(words[i][0]) === true) {
                 result += `код${words[i]} ` 
            
@@ -17,4 +17,4 @@ function cryptText(text) {
 
 }
 
-console.log(cryptText('зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная '))
+console.log(cryptText('зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная'))
