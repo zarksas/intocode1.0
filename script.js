@@ -6,23 +6,23 @@ function cryptText(text) {
      
         for (let i = 0; i < words.length; i++) {
            if (isFinite(words[i])) {
-            if (words[i].length < 3) {
+                if (words[i].length < 3) {
                 result += `${words[i][1]}${words[i][0]} `
-            } else {
-              let firstNumber = words[i][0];
-              let lastNumber = words[i][words[i].length - 1]
-              let sum = `${firstNumber}${words[i]}${lastNumber}`;
-              result += sum + ' ';
-            }
+                } else {
+                    let firstNumber = words[i][0];
+                    let lastNumber = words[i][words[i].length - 1]
+                    let sum = `${firstNumber}${words[i]}${lastNumber}`;
+                    result += sum + ' ';
+                }
             
                 
 
-           } else if (words[i].length < 3)  {
-               result += `${words[i]}ик `;
-           } else if (vowels.includes(words[i][0]) === true) {
-                result += `код${words[i]} ` 
+                } else if (words[i].length < 3)  {
+                    result += `${words[i]}ик `;
+                    } else if (vowels.includes(words[i][0]) === true) {
+                    result += `код${words[i]} ` 
            
-            } else result += `инту${words[i]} `
+                    } else result += `инту${words[i]} `
            
         } 
         return result;
